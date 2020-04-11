@@ -1,4 +1,4 @@
-# 📌My Super AdaLoversConf Video App - React ]
+# 📌My Super AdaLoversConf Video App - React
 
 This project is a basic example to play with React. The main idea is to show the AdaLoversConf2019 videos.  
 
