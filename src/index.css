@@ -71,3 +71,35 @@ body {
  
 }
 
+
+.character-grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.character-grid-item{
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 6px;
+  
+}
+
+.character-image{
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  animation: blurEffect 0.5s ease-in;
+  transition: blurEffect 0.5s ease-in;;
+}
+
+.character-name {
+  font-size: 25px;
+}
+
+.character-name p {
+  font-size: 15px;
+  color: aquamarine;
+}
