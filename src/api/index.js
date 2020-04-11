@@ -64,6 +64,11 @@ export const getVideos = () => new Promise((resolve, reject) => {
     setTimeout( () => resolve(FAKE_DATA), FAKE_DELAY);
 });
 
+
+export const getErrorVideos = () => new Promise((resolve, reject) => {
+    setTimeout( () => reject(FAKE_DATA), FAKE_DELAY);
+});
+
 const getDescription = async () => {
     try {
         let resp = await fetch('http://www.cupcakeipsum.com/#/paragraphs/2/length/short/with_love/false/start_with_cupcake/true/seed/44841c679d07b5a197f51a9213cfcc68cf55aa986295f5d698899276ab20cacd');
