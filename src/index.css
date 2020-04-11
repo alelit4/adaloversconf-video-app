@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header-content{
+  width: 100%;
+  text-align: center;
+}
+
+.header-title-text {
+  display: inline-block;
+  margin: 16px;
+  font-size: 30px;
+}
+
+.footer-content{
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-title-text {
+  display: inline-block;
+  margin: 16px;
+  font-size: 10px;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 30vh;
+  height: 50vh;
+}
+
+/** List **/
+.container {
+  margin: 10px 10px;
+}
+
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+}
+
+.grid-item{
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+.preview-image{
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  animation: blurEffect 0.5s ease-in;
+  transition: blurEffect 0.5s ease-in;;
+}
+
+@keyframes blurEffect {
+  0% { filter: blur(10px); }
+  50% { filter: blur(5px); }
+  100% { filter: blur(0px); }
+ 
+}
+

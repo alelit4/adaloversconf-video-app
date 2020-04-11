@@ -1,0 +1,12 @@
+.App {
+  background-color: #282c34;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  min-height: 100vh;
+
+}
+
+a {
+  color: #61dafb;
+}
