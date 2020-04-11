@@ -19,9 +19,9 @@ class List extends Component {
     
     async componentDidMount(){
         this.setState({isLoading: true});
-     //   getVideos().then((apiVideos) => { 
-     //       this.setState({isLoading: false, videos: apiVideos});
-     //   }).catch((error) => (this.setState({isLoading: false, error}) ));
+        getVideos().then((apiVideos) => { 
+            this.setState({isLoading: false, videos: apiVideos});
+        }).catch((error) => (this.setState({isLoading: false, error}) ));
         getCharacter().then((apiCharacter) => { 
             this.setState({isLoading: false, characters: apiCharacter});
         }).catch((error) => (this.setState({isLoading: false, error}) ));
@@ -34,18 +34,19 @@ class List extends Component {
         if(isLoading) return (<Loading message="Loading content ..."></Loading>);
         return (<React.Fragment> 
             <div className="container">
-                <div className="grid-container">
-                    { videos && videos.map((video, i) => {
-                            return (<Item key={i} data={video} /> )
-                      }) 
-                    }
-                </div>
                 <div className="character-grid-container">
                     { characters && characters.map((character, i) => {
                             return (<Character key={i} data={character} /> )
                       }) 
                     }
                 </div>
+                <div className="grid-container">
+                    { videos && videos.map((video, i) => {
+                            return (<Item key={i} data={video} /> )
+                      }) 
+                    }
+                </div>
+                
             </div>
             </React.Fragment>)
     }

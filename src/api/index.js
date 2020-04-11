@@ -1,4 +1,4 @@
-const FAKE_DELAY = 2000;
+const FAKE_DELAY = 1000;
 const FAKE_DATA = [
     {  
         id:0,
