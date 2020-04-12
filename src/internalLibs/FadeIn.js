@@ -3,7 +3,7 @@ export const fadeIn = (el) => {
   
     var last = +new Date();
     var tick = function() {
-      el.style.opacity = +el.style.opacity + (new Date() - last) / 800;
+      el.style.opacity = +el.style.opacity + (new Date() - last) / 1000;
       last = +new Date();
   
       if (+el.style.opacity < 1) {
