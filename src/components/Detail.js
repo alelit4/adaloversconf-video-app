@@ -3,6 +3,7 @@ import { withRouter } from 'react-router';
 import {getVideoDetail} from './../api';
 import Loading from './Loading';
 import Video from "./Video";
+import {fadeIn} from './../internalLibs/FadeIn'
 
 class Detail extends Component {
     
@@ -29,7 +30,7 @@ class Detail extends Component {
                 <Video title={video.title} embed={video.embed}/>
                 <div className="detail-summary">
                     <h2 className="detail-title"> {video.title} </h2>
-                    <p> {video.description} </p>
+                    <p ref={el => fadeIn(el)}> {video.description} </p>
                 </div>
             </div>
         
